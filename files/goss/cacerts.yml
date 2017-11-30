@@ -1,0 +1,7 @@
+---
+# Add tests here to verify private CA injection has worked
+# http:
+#   https://interal.endpoint:
+#     title: Verify internal endpoint signed with Private CA certificate
+#     status: 200
+#     allow-insecure: false

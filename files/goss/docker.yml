@@ -1,0 +1,6 @@
+---
+service:
+  docker:
+    title: Verify docker is running as a service
+    running: true
+    enabled: true

@@ -1,0 +1,14 @@
+---
+command:
+  uname -r:
+    title: Verify Kernel has been updated
+    exit-status: 0
+    stdout:
+      - /^4/
+
+file:
+  /etc/localtime:
+    title: Verify timezone is set to Australia/Sydney
+    exists: true
+    filetype: symlink
+    linked-to: /usr/share/zoneinfo/Australia/Sydney

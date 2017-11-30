@@ -1,0 +1,6 @@
+---
+gossfile:
+  base.yml: {}
+  cacerts.yml: {}
+  cntlm.yml: {}
+  docker.yml: {}
