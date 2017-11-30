@@ -1,4 +1,4 @@
-# Macquarie Bank - Ubuntu VM build via Packer
+# Enterprise Ubuntu VM build via Packer
 ### Overview
 
 This repository contains [Packer](https://packer.io/) templates for creating Ubuntu Vagrant boxes for use within Macquarie bank. The repository and the VMs it creates have no explicit support - they can be picked up and used on an as needed basis by any team and customized to those teams' requirements.
