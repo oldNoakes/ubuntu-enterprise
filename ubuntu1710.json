@@ -10,6 +10,5 @@
   "memory": "1024",
   "preseed" : "preseed.cfg",
   "update": "true",
-  "custom_script": "script/custom/bootstrap.sh,script/custom/cacerts.sh,script/custom/cntlm.sh,script/custom/docker.sh,script/custom/goss.sh",
   "boot_command_prefix": "<esc><esc><enter><wait>"
 }
