@@ -13,3 +13,4 @@ iso/
 .DS_Store
 .bundle/
 private_TODO.md
+files/certificates/*.crt
