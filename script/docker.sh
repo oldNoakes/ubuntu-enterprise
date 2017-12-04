@@ -20,4 +20,27 @@ echo "Installing docker-ce"
 apt-get -y update
 apt-get -y install docker-ce
 
-# Configure insecure registry + DNS?
+SSH_USER=${SSH_USERNAME:-ubuntu}
+echo "Adding ${SSH_USER} to the docker role"
+usermod --groups docker ${SSH_USER}
+
+function inject_array_docker_daemon {
+  local array=$1
+  local key=$2
+  if [ ! -z "${array}" ]
+  then
+    apt-get -y install jq
+    local cleaned=$(echo -e ${array} | tr -d '[:space:]')
+    local IFS=","
+    for i in $cleaned
+    do
+      echo "Adding $i to ${key}"
+      jq --arg KEY "${key}" --arg REGISTRY "${i}" '.[$KEY] += [$REGISTRY]' /etc/docker/daemon.json >> /etc/docker/daemon.tmp.json \
+        && mv /etc/docker/daemon.tmp.json /etc/docker/daemon.json
+    done
+  fi
+}
+
+echo "{}" >> /etc/docker/daemon.json
+inject_array_docker_daemon "${DOCKER_INSECURE_REGISTRIES}" "insecure-registries"
+inject_array_docker_daemon "${DOCKER_DNS}" "dns"

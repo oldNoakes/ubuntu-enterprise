@@ -4,3 +4,10 @@ service:
     title: Verify docker is running as a service
     running: true
     enabled: true
+
+command:
+  su - ${SSH_USERNAME} -c 'docker run hello-world':
+    title: Verify Ubuntu user can run and use docker 
+    exit-status: 0
+    stdout:
+      - /^installation appears to be working correctly/

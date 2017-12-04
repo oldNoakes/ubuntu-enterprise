@@ -193,6 +193,8 @@
       "environment_vars": [
         "CLEANUP_PAUSE={{user `cleanup_pause`}}",
         "DESKTOP={{user `desktop`}}",
+        "DOCKER_DNS={{`docker_dns`}}",
+        "DOCKER_INSECURE_REGISTRIES={{user `docker_insecure_registries`}}",
         "UPDATE={{user `update`}}",
         "INSTALL_VAGRANT_KEY={{user `install_vagrant_key`}}",
         "SSH_USERNAME={{user `ssh_username`}}",
@@ -222,6 +224,8 @@
     "cpus": "1",
     "desktop": "false",
     "disk_size": "65536",
+    "docker_dns": "",
+    "docker_insecure_registries": "",
     "ftp_proxy": "{{env `ftp_proxy`}}",
     "headless": "",
     "http_proxy": "{{env `http_proxy`}}",
