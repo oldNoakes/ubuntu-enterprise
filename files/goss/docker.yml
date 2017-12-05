@@ -10,4 +10,4 @@ command:
     title: Verify Ubuntu user can run and use docker 
     exit-status: 0
     stdout:
-      - /^installation appears to be working correctly/
+      - /installation appears to be working correctly/

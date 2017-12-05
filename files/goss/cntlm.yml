@@ -8,5 +8,5 @@ file:
 service:
   cntlm:
     title: Verify CNTLM is enabled but not running
-    enabled: true
+    enabled: false
     running: false

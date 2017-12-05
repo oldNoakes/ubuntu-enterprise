@@ -199,7 +199,7 @@
         "CNTLM_PROXY={{user `cntlm_proxy`}}",
         "CNTLM_PROXY_LISTEN={{user `cntlm_proxy_listen`}}",
         "DESKTOP={{user `desktop`}}",
-        "DOCKER_DNS={{`docker_dns`}}",
+        "DOCKER_DNS={{user `docker_dns`}}",
         "DOCKER_INSECURE_REGISTRIES={{user `docker_insecure_registries`}}",
         "UPDATE={{user `update`}}",
         "INSTALL_VAGRANT_KEY={{user `install_vagrant_key`}}",
