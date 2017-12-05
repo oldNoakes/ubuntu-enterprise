@@ -192,6 +192,12 @@
     {
       "environment_vars": [
         "CLEANUP_PAUSE={{user `cleanup_pause`}}",
+        "CNTLM_ENABLE={{user `cntlm_enable`}}",
+        "CNTLM_AUTH_TYPE={{ user `cntlm_auth_type`}}",
+        "CNTLM_DOMAIN={{user `cntlm_domain`}}",
+        "CNTLM_NO_PROXY={{user `cntlm_no_proxy`}}",
+        "CNTLM_PROXY={{user `cntlm_proxy`}}",
+        "CNTLM_PROXY_LISTEN={{user `cntlm_proxy_listen`}}",
         "DESKTOP={{user `desktop`}}",
         "DOCKER_DNS={{`docker_dns`}}",
         "DOCKER_INSECURE_REGISTRIES={{user `docker_insecure_registries`}}",
@@ -221,6 +227,12 @@
   "variables": {
     "boot_command_prefix": "<enter><wait><f6><esc><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
     "cleanup_pause": "",
+    "cntlm_domain": "",
+    "cntlm_enable": "false",
+    "cntlm_no_proxy": "",
+    "cntlm_proxy": "",
+    "cntlm_auth_type": "NTLMv2",
+    "cntlm_proxy_listen": "0.0.0.0:3128",
     "cpus": "1",
     "desktop": "false",
     "disk_size": "65536",
