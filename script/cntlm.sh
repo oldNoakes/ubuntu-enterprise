@@ -21,11 +21,11 @@ mv /tmp/cntlm/setup_proxy_password /usr/local/bin/setup_proxy_password
 chmod a+x /usr/local/bin/setup_proxy_password 
 
 if [[ ! "${CNTLM_ENABLE}" =~ ^(true|yes|on|1|TRUE|YES|ON])$ ]]; then
-  sed -i "s/REPLACE_ME_DOMAIN/${CNTLM_DOMAIN}/g" cntlm.conf
-  sed -i "s/REPLACE_ME_PROXY/${CNTLM_PROXY}/g" cntlm.conf
-  sed -i "s/REPLACE_ME_NOPROXY/${CNTLM_NO_PROXY}/g" cntlm.conf
-  sed -i "s/REPLACE_ME_LISTENER/${CNTLM_PROXY_LISTEN}/g" cntlm.conf
-  sed -i "s/REPLACE_ME_AUTH/${CNTLM_AUTH_TYPE}/g" cntlm.conf
+  sed -i "s/REPLACE_ME_DOMAIN/${CNTLM_DOMAIN}/g" /etc/cntlm.conf
+  sed -i "s/REPLACE_ME_PROXY/${CNTLM_PROXY}/g" /etc/cntlm.conf
+  sed -i "s/REPLACE_ME_NOPROXY/${CNTLM_NO_PROXY}/g" /etc/cntlm.conf
+  sed -i "s/REPLACE_ME_LISTENER/${CNTLM_PROXY_LISTEN}/g" /etc/cntlm.conf
+  sed -i "s/REPLACE_ME_AUTH/${CNTLM_AUTH_TYPE}/g" /etc/cntlm.conf
 fi
 
 ## Extras
