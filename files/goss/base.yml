@@ -1,7 +1,7 @@
 ---
 command:
   uname -r:
-    title: Verify Kernel has been updated
+    title: Verify Kernel version is at least 4
     exit-status: 0
     stdout:
       - /^4/
