@@ -1,5 +1,4 @@
-#!/bin/bash
-set -eux
+#!/bin/bash -eux
 
 echo "Installing goss"
 apt-get -y install jq

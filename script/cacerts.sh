@@ -1,5 +1,4 @@
-#!/bin/bash
-set -eux
+#!/bin/bash -eux
 
 echo "Injecting Enterprise Certificates into default CA bundle"
 apt-get -y install ca-certificates openssl

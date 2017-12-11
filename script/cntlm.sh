@@ -1,5 +1,4 @@
-#!/bin/bash
-set -eux
+#!/bin/bash -eux
 
 # Install and then stop and disable CNTLM
 apt-get -y install cntlm

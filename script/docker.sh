@@ -1,5 +1,4 @@
-#!/bin/bash
-set -eux
+#!/bin/bash -eux
 
 echo "Removing old versions if installed"
 apt-get -y remove docker docker-engine docker.io
