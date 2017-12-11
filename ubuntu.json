@@ -217,6 +217,8 @@
         "script/cacerts.sh",
         "script/cntlm.sh",
         "script/docker.sh",
+        "script/devtools_cli.sh",
+        "script/devtools_gui.sh",
         "script/goss.sh",
         "script/minimize.sh",
         "script/cleanup.sh"
