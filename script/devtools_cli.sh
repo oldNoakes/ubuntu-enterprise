@@ -1,4 +1,4 @@
-#!/bin/bash -eux
+#!/bin/bash
 
 echo "Setting up requirements for adding a repository"
 apt-get -y install software-properties-common python-software-properties

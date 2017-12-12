@@ -27,8 +27,8 @@ if [[ $DISTRIB_RELEASE == 12.04 ]]; then
     configure_ubuntu1204_autologin
 
 else
-    echo "==> Installing ubuntu-desktop"
-    apt-get install -y ubuntu-desktop
+    echo "==> Installing ubuntu-desktop with minimal requirements"
+    apt-get install -y --no-install-recommends ubuntu-desktop
 
     USERNAME=${SSH_USER}
     LIGHTDM_CONFIG=/etc/lightdm/lightdm.conf
