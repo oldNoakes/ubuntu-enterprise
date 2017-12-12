@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -eux
 
 echo "Setting up requirements for adding a repository"
 apt-get -y install software-properties-common python-software-properties
@@ -10,3 +10,5 @@ apt-get -y install git
 
 echo "Installing openJDK 8"
 apt-get -y install openjdk-8-jdk-headless
+
+echo "Finished installing CLI based development tools"
