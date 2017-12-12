@@ -4,3 +4,4 @@ gossfile:
   cacerts.yml: {}
   cntlm.yml: {}
   docker.yml: {}
+  devtools.yml: {}

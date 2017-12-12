@@ -1,0 +1,15 @@
+---
+command:
+  su - ${SSH_USERNAME} -c 'java -version':
+    title: Verify Ubuntu user can run and use OpenJDK JRE 
+    exit-status: 0
+    stderr:
+      - /openjdk version/
+  su - ${SSH_USERNAME} -c 'javac -version':
+    title: Verify Ubuntu user can run and use OpenJDK JDK 
+    exit-status: 0
+    stderr:
+      - /javac/
+  su - ${SSH_USERNAME} -c 'git --version':
+    title: Verify Ubuntu user can run and use Git
+    exit-status: 0
