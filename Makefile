@@ -8,11 +8,11 @@ NC     := \033[0m # No Color
 IMPORT_TIME := $(shell /bin/date "+%s")
 
 usage:
-	@printf "${YELLOW}make server  	         ${GREEN}Build Ubuntu Server Virtualbox VM${NC}\n"
-	@printf "${YELLOW}make desktop           ${GREEN}Build Ubuntu Desktop Virtualbox VM${NC}\n"
-	@printf "${YELLOW}make import_server	 ${GREEN}Import Ubuntu Server VM into VirtualBox${NC}\n"
-	@printf "${YELLOW}make import_desktop	 ${GREEN}Import Ubuntu Desktop VM into VirtualBox${NC}\n"
-	@printf "${YELLOW}make clean			 ${GREEN}Clean all generated VM instances${NC}\n"
+	@printf "${YELLOW}make server				${GREEN}Build Ubuntu Server Virtualbox VM${NC}\n"
+	@printf "${YELLOW}make desktop				${GREEN}Build Ubuntu Desktop Virtualbox VM${NC}\n"
+	@printf "${YELLOW}make import_server			${GREEN}Import Ubuntu Server VM into VirtualBox${NC}\n"
+	@printf "${YELLOW}make import_desktop			${GREEN}Import Ubuntu Desktop VM into VirtualBox${NC}\n"
+	@printf "${YELLOW}make clean			 	${GREEN}Clean all generated VM instances${NC}\n"
 
 clean:
 	@printf "${YELLOW}Removing all legacy builds${NC}\n"
